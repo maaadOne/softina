@@ -8,7 +8,7 @@ import '../routes/app_routes.dart';
 class PathMiddleware extends GetMiddleware {
   @override
   RouteSettings? redirect(String? route) {
-    final deviceService = Get.put(DeviceStatuService());
+    final deviceService = Get.find<DeviceStatuService>();
     final pathService = Get.find<PathService>();
 
     if (pathService.getCurrentPath == "" || deviceService.isGoogleDevice) {

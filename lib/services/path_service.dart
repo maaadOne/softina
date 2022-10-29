@@ -2,6 +2,7 @@ import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+// service to check path
 class PathService extends GetxService {
   String? path;
 

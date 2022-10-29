@@ -19,6 +19,7 @@ class NewsController extends GetxController {
     super.onInit();
   }
 
+  // refreshing news page
   Future refreshPage({bool showMessage = false}) async {
     await getTopNews();
     if (showMessage) {
@@ -27,6 +28,7 @@ class NewsController extends GetxController {
     }
   }
 
+  // gets news from repository
   Future getTopNews() async {
     try {
       news.assignAll(await _newsRepository!.getTopNews());

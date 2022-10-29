@@ -14,32 +14,13 @@ class WebViewPage extends GetView<WebviewController> {
       // ),
       body: SafeArea(
         child: WebView(
-          initialUrl: controller.url.value,
+          initialUrl: controller.path,
+          onWebViewCreated: (_) => controller.savePath(),
+          onWebResourceError: (error) {
+            debugPrint("print$error");
+          },
         ),
       ),
     );
   }
 }
-
-// class WebViewExample extends StatefulWidget {
-//   @override
-//   WebViewExampleState createState() => WebViewExampleState();
-// }
-
-// class WebViewExampleState extends State<WebViewExample> {
-//   @override
-//   void initState() {
-//     super.initState();
-//     // Enable virtual display.
-//     if (Platform.isAndroid) WebView.platform = AndroidWebView();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const SafeArea(
-//       child: WebView(
-//         initialUrl: 'https://flutter.dev',
-//       ),
-//     );
-//   }
-// }

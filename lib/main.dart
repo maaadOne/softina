@@ -4,17 +4,14 @@ import 'package:get/get.dart';
 import 'package:softina/routes/app_pages.dart';
 import 'package:softina/services/device_status_service.dart';
 import 'package:softina/services/path_service.dart';
-// import 'package:softina/services/simcard_servic.dart';
-
 import 'providers/news_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await Get.putAsync((() => PathService().init()));
-  // await Get.putAsync(() => SimCardService().getSimCardStatus());
   await Get.putAsync(() => NewsApiClient().init());
-  await Get.putAsync(() => DeviceStatuService().getDeviceStatuStatus());
+  await Get.putAsync(() => DeviceStatuService().init());
 
   runApp(
     GetMaterialApp(
