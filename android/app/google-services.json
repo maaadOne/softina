@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445507172452",
+    "project_id": "softina-1a9de",
+    "storage_bucket": "softina-1a9de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445507172452:android:2ec2d77191c906a79fc771",
+        "android_client_info": {
+          "package_name": "com.example.softina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445507172452-m37ume91fd3vti61ae90dqgbsbroqmot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNafK3ei_l5qQjEheYP5x2nxup9RLWQg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445507172452-m37ume91fd3vti61ae90dqgbsbroqmot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
