@@ -17,11 +17,12 @@ class AppPages {
       binding: NewsBinding(),
     ),
     GetPage(
-        name: Routes.WEBVIEW,
-        page: () => const WebViewPage(),
-        binding: WebViewBinding(),
-        middlewares: [
-          PathMiddleware(),
-        ]),
+      name: Routes.WEBVIEW,
+      page: () => const WebViewPage(),
+      binding: WebViewBinding(),
+      middlewares: [
+        PathMiddleware(),
+      ],
+    ),
   ];
 }

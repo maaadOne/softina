@@ -4,8 +4,8 @@ import 'package:softina/modules/webview/controllers/webview_controller.dart';
 class WebViewBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<WebviewController>(
-      () => WebviewController(),
+    Get.lazyPut<WebviewsController>(
+      () => WebviewsController(),
     );
   }
 }

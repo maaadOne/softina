@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "445507172452",
-    "project_id": "softina-1a9de",
-    "storage_bucket": "softina-1a9de.appspot.com"
+    "project_number": "105510107150",
+    "project_id": "krasn-f1487",
+    "storage_bucket": "krasn-f1487.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:445507172452:android:2ec2d77191c906a79fc771",
+        "mobilesdk_app_id": "1:105510107150:android:c0d1f6ccd3389ebe95245f",
         "android_client_info": {
-          "package_name": "com.example.softina"
+          "package_name": "clicdappsv.omigl"
         }
       },
       "oauth_client": [
         {
-          "client_id": "445507172452-m37ume91fd3vti61ae90dqgbsbroqmot.apps.googleusercontent.com",
+          "client_id": "105510107150-5sphla9223jo1spruf7dg2price1ca1p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCNafK3ei_l5qQjEheYP5x2nxup9RLWQg0"
+          "current_key": "AIzaSyDooFhaqRpwLpYIeJ7EOnWhV3zsY0UCHe4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "445507172452-m37ume91fd3vti61ae90dqgbsbroqmot.apps.googleusercontent.com",
+              "client_id": "105510107150-5sphla9223jo1spruf7dg2price1ca1p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

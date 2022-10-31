@@ -1,11 +1,17 @@
 import 'package:get/get.dart';
+import 'package:sim_data/sim_data.dart';
 
 class SimCardService extends GetxService {
-  String allowsVOIP = "";
-  // SimData? _simData;
+  bool _simCardStatus = false;
 
-  Future<String> getSimCardStatus() async {
-    print("Sim card statys: $allowsVOIP");
-    return allowsVOIP;
+  Future<SimCardService> init() async {
+    SimData simData = await SimDataPlugin.getSimData();
+    if (simData.cards.isNotEmpty) {
+      print("NOT EMPTY");
+      _simCardStatus = true;
+    }
+    return this;
   }
+
+  bool get isSimCardExist => _simCardStatus;
 }
