@@ -17,7 +17,7 @@ void main() async {
 
   runApp(
     GetMaterialApp(
-      title: "Softina",
+      title: "Clic",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
