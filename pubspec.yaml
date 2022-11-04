@@ -43,7 +43,7 @@ dependencies:
   dio: ^4.0.6
   dio_http_cache: ^0.3.0
   device_info_plus: ^2.0.0
-  sim_data: ^0.0.2
+  flutter_sim_country_code: ^0.1.2
   # url_launcher: ^6.1.6
 
 dev_dependencies:

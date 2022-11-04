@@ -1,13 +1,12 @@
+import 'package:flutter_sim_country_code/flutter_sim_country_code.dart';
 import 'package:get/get.dart';
-import 'package:sim_data/sim_data.dart';
 
 class SimCardService extends GetxService {
   bool _simCardStatus = false;
 
   Future<SimCardService> init() async {
-    SimData simData = await SimDataPlugin.getSimData();
-    if (simData.cards.isNotEmpty) {
-      print("NOT EMPTY");
+    String? platformVersion = await FlutterSimCountryCode.simCountryCode;
+    if (platformVersion!.length == 2) {
       _simCardStatus = true;
     }
     return this;
