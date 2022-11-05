@@ -8,7 +8,8 @@ class DeviceStatuService extends GetxService {
   Future<DeviceStatuService> init() async {
     var deviceInfoPlugin = DeviceInfoPlugin();
     var deviceInfo = await deviceInfoPlugin.androidInfo;
-    if (deviceInfo.manufacturer!.contains("google")) {
+    if (deviceInfo.manufacturer!.contains("Google")) {
+      print("google");
       _isGoogleDevice = true;
     }
     return this;
